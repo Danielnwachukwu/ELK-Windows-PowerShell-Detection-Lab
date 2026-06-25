@@ -253,75 +253,71 @@ The Elastic Stack successfully detected:
 
 # Screenshots
 
+---
+
 ## 01 Windows Discovery Commands
 
-Shows execution of:
-
-- whoami
-- hostname
-- ipconfig
+![Windows Discovery Commands](screenshots/01_Windows-Discovery-Commands.png)
 
 ---
 
 ## 02 User Enumeration
 
-Detection of:
-
-net user
+![User Enumeration](screenshots/02_PowerShell_Net_User_Enumeration.png)
 
 ---
 
 ## 03 Encoded PowerShell Execution
 
-Execution of Base64 encoded PowerShell command.
+![Encoded PowerShell Execution](screenshots/03_Encoded_PowerShell_Execution.png)
 
 ---
 
-## 04 ExecutionPolicy Bypass
+## 04 PowerShell ExecutionPolicy Bypass
 
-PowerShell launched using ExecutionPolicy Bypass.
-
----
-
-## 05 Privilege Escalation
-
-PowerShell executed with RunAs.
+![ExecutionPolicy Bypass](screenshots/04_PowerShell_ExecutionPolicy_Bypass_GetProcess.png)
 
 ---
 
-## 06 Child Process Creation
+## 05 RunAs Privilege Escalation
 
-Notepad launched from PowerShell.
-
----
-
-## 07 Kibana Detection — PowerShell Process
-
-Detection of PowerShell process events.
+![RunAs Privilege Escalation](screenshots/05_PowerShell_RunAs_Privilege_Escalation.png)
 
 ---
 
-## 08 Kibana Detection — Encoded Command
+## 06 PowerShell Creates Notepad
 
-Detection of Base64 encoded PowerShell execution.
-
----
-
-## 09 Kibana Detection — RunAs
-
-Detection of elevated PowerShell execution.
+![PowerShell Creates Notepad](screenshots/06_process-creation-notepad0-from-powershell.png)
 
 ---
 
-## 10 Kibana Detection — Notepad
+## 07 Kibana Detection – PowerShell Process
 
-Detection of child process creation.
+![Kibana PowerShell Process](screenshots/07_Kibana_Detection_PowerShell_Process.png)
 
 ---
 
-## 11 Parent Child Relationship
+## 08 Kibana Detection – Encoded PowerShell
 
-Validation that PowerShell created the Notepad process.
+![Kibana Encoded PowerShell](screenshots/08_Kibana_Detection_Encoded_PowerShell_Command.png)
+
+---
+
+## 09 Kibana Detection – RunAs
+
+![Kibana RunAs](screenshots/09_Kibana_Detection_RunAs_Privilege_Escalation.png)
+
+---
+
+## 10 Kibana Detection – Notepad Process
+
+![Kibana Notepad](screenshots/10_Kibana_Detection_Notepad_Process.png)
+
+---
+
+## 11 Parent–Child Process Relationship
+
+![Parent Child Relationship](screenshots/11_Process_Parent_Child_Relationship.png)
 
 ---
 
