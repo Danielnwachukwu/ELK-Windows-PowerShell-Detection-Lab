@@ -249,6 +249,14 @@ The Elastic Stack successfully detected:
 - PowerShell process execution
 - Sysmon Process Create events
 
+| Technique               | MITRE ATT&CK | Detection                            |
+| ----------------------- | ------------ | ------------------------------------ |
+| Encoded PowerShell      | T1059.001    | `process.command_line:*enc*`         |
+| Execution Policy Bypass | T1059.001    | `ExecutionPolicy Bypass`             |
+| User Enumeration        | T1087        | `message:*net user*`                 |
+| RunAs                   | T1548        | `message:*RunAs*`                    |
+| Process Creation        | T1059        | `process.parent.name:powershell.exe` |
+
 ---
 
 # Screenshots
